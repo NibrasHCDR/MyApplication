@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+
 }
 
 android {
@@ -46,6 +48,8 @@ dependencies {
     implementation ('com.mapbox.maps:android:10.1.0'){
         exclude group: 'group_name', module: 'module_name'
     }
+
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
 
 
     //Dependencias Internas (Generadas Automaticamente)
