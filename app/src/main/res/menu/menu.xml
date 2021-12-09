@@ -17,7 +17,7 @@
 
     <item
         android:id="@+id/perfilFragment"
-        android:icon="@drawable/perfil"
+        android:icon="@drawable/edificios"
         android:title="Perfil"
         />
 

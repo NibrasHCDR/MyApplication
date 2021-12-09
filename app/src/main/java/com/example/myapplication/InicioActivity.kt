@@ -15,6 +15,7 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.snackbar.Snackbar
 import com.mapbox.maps.MapboxMap
 import com.mapbox.maps.MapView
 import com.mapbox.maps.Style
@@ -35,6 +36,15 @@ class InicioActivity : AppCompatActivity() {
         val appBarConfiguration = AppBarConfiguration(setOf(R.id.noticiasFragment, R.id.inicioFragment, R.id.perfilFragment))
 
         bottomNavigationView.setupWithNavController(navController)
+        bottomNavigationView.setItemIconTintList(null)
+
+        val fab: View = findViewById(R.id.fab)
+        fab.setOnClickListener { view ->
+            Snackbar.make(view, "Esto es una accion", Snackbar.LENGTH_LONG)
+                .setAction("Action", null)
+                .show()
+        }
+
 
     }
 }
