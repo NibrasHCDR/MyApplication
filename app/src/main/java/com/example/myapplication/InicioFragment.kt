@@ -11,6 +11,7 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 
@@ -27,7 +28,7 @@ class InicioFragment : Fragment() {
          * user has installed Google Play services and returned to the app.
          */
         val marcador1 = LatLng(-29.942853, -71.276966)
-        googleMap.addMarker(MarkerOptions().position(marcador1).title("Marcador de Prueba"))
+        googleMap.addMarker(MarkerOptions().position(marcador1).title("Marcador de Prueba").icon(BitmapDescriptorFactory.fromResource(R.drawable.build_11)))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(marcador1))
     }
 

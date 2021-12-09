@@ -9,12 +9,14 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="82dp"
-        android:layout_height="79dp"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
         android:contentDescription="Nada"
-        android:src="@drawable/nuevo_mensaje"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:backgroundTint="#ffff"
+        app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/map"
         app:layout_constraintHorizontal_bias="1.0"

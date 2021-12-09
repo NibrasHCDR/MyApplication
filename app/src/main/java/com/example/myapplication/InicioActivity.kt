@@ -29,6 +29,7 @@ class InicioActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
         //Instanciamos nuestro MapView dentro de la vista
+        val fab: View = findViewById(R.id.fab)
 
         //Instanciamos las variables pque contienen los fragmentos}
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
@@ -38,7 +39,7 @@ class InicioActivity : AppCompatActivity() {
         bottomNavigationView.setupWithNavController(navController)
         bottomNavigationView.setItemIconTintList(null)
 
-        val fab: View = findViewById(R.id.fab)
+
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Esto es una accion", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
