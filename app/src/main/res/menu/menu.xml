@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
      android:id="@+id/ic_favoritos"
-        android:icon="@drawable/ic_launcher_foreground"
-       android:title=""
+        android:icon="@drawable/noticeboard"
+       android:title="Noticias"
        />
 
     <item
         android:id="@+id/ic_Buscar"
         android:icon="@drawable/searchicon"
-        android:title=""
+        android:title="   Buscar"
         />
+
 
     <item
         android:id="@+id/ic_perfil"
         android:icon="@drawable/edificios"
-        android:title=""
+        android:title="Perfil"
         />
 
-
 </menu>
+
