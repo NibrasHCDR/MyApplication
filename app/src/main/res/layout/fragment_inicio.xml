@@ -6,9 +6,14 @@
     tools:context=".fragments.InicioFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.mapbox.maps.MapView
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Este es el inicio" />
+        mapbox:mapbox_cameraTargetLat="40.7128"
+        mapbox:mapbox_cameraTargetLng="-74.0060"
+        mapbox:mapbox_cameraZoom="9.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
