@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 
 import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
@@ -27,15 +26,19 @@ class InicioFragment : Fragment() {
          * install it inside the SupportMapFragment. This method will only be triggered once the
          * user has installed Google Play services and returned to the app.
          */
+
         val marcador1 = LatLng(-29.942853, -71.276966)
-        googleMap.addMarker(MarkerOptions().position(marcador1).title("Marcador de Prueba").icon(BitmapDescriptorFactory.fromResource(R.drawable.build_11)))
+        googleMap.addMarker(MarkerOptions().position(marcador1).title("Marcador de Prueba").icon(BitmapDescriptorFactory.fromResource(
+            R.drawable.build_11
+        )))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(marcador1))
+        
     }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+      savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_inicio, container, false)
     }
