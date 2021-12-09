@@ -2,21 +2,21 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-     android:id="@+id/ic_favoritos"
+     android:id="@+id/noticiasFragment"
         android:icon="@drawable/noticeboard"
         android:title="Noticias"
 
        />
 
     <item
-        android:id="@+id/ic_Buscar"
+        android:id="@+id/inicioFragment"
         android:icon="@drawable/searchicon"
         android:title="   Buscar"
         />
 
 
     <item
-        android:id="@+id/ic_perfil"
+        android:id="@+id/perfilFragment"
         android:icon="@drawable/perfil"
         android:title="Perfil"
         />
